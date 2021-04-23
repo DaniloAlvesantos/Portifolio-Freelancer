@@ -1,0 +1,380 @@
+:root {
+    --red:#D00000;
+    --dark-turquoise:#1CCAD8;
+    --rich-black:#111111;
+    --USAFA-blue:#0353A4;
+    --rich-white:#EEE5E5;
+    --white:#ffffff;
+    --rich-black-fogra:#000411;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+}
+
+
+.container {
+    font-family:'Fira Sans', sans-serif;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container {
+    background:linear-gradient(180deg,var(--USAFA-blue),var(--dark-turquoise)) fixed;
+   
+    width:100%;
+    height:5rem;
+   
+    align-items: center;
+    justify-content: center;
+   
+    text-transform: uppercase;
+}
+
+.container_items {
+    margin-top:1rem;
+}
+
+.container_ul{
+    display:inline-flex;
+    list-style: none;
+   
+    margin-bottom:1rem;
+}
+
+.lista {
+    list-style: none;
+    position: relative;
+    
+    display: inline-flex;
+    padding:1rem;
+    padding-left:0.8rem;
+    transition:all 0.8s ease;
+}
+
+.lista a:hover{
+    color:var(--rich-black-fogra);
+    transition:all 0.8s ease;
+}
+
+
+.lista a {
+    text-decoration: none;
+    color:var(--rich-white);
+   
+    transition:all 0.8s ease;
+   
+    border:transparent;
+}
+
+.contianer_main{
+    background:var(--rich-black);
+   
+    width:100%;
+    height:25rem;
+   
+    display: flex;
+   
+    color:var(--rich-white);
+    font-family:'Fira Sans', sans-serif;
+}
+
+#titulo{
+    color:var(--USAFA-blue);
+   
+    font-size:5rem;
+   
+    margin:1.6rem;
+    margin-left:0.8rem;
+}
+
+.txt {
+   
+    font-size:1.2rem;
+   
+    margin:1rem;
+    padding-right:3rem;
+}
+
+.txt strong {
+    color:var(--dark-turquoise);
+}
+
+
+
+.txt_sec {
+    font-size:1.2rem;
+   
+    margin:2rem;
+    margin-top:9rem;
+    margin-left:8rem;
+}
+
+.txt_sec strong {
+    color: var(--dark-turquoise);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+   
+    width:45rem;
+}
+
+.container_perfil {
+    display: flex;
+    
+    width:18rem;
+    max-width:20%;
+    height:18rem;
+    max-height:20%;
+
+    margin:2rem;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#perfil {
+    border-radius: 50%;
+   
+    display: block;
+   
+    margin:15rem 5rem 1rem 15rem;
+}
+
+.container_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: auto;
+    margin-bottom:5rem;
+}
+
+
+.skills {
+    display: inline-flex;
+    margin-top:-2rem;
+}
+
+.skills li {
+    display: inline-flex;
+}
+
+.skills_items {
+    margin:0.7rem;
+   
+    width:6.25rem;
+    max-width:100px;
+    height: 6.25rem;
+    max-height:100px; 
+}
+
+#slider {
+    display: flex;
+    
+    margin: auto;
+    
+    box-shadow:1px 2px 28px 2px rgb(0 0 0 / 41%);
+    border:1px solid transparent;
+    border-radius:7px;
+    
+    width:37.5rem;
+    max-width:37.5rem;
+    height:20rem;
+    max-height:31.25rem;
+
+    padding-top:5px;
+
+    background: #fff;    
+    position: relative;
+}
+
+#slider img {
+    opacity:0;
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    border-radius:7px;
+    
+    transition:opacity 800ms;
+    
+    object-fit: cover;
+}
+
+#slider img.selected{
+    opacity: 1;
+}
+
+.about-father{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin:3rem;
+
+    font-family:'Fira Sans', sans-serif;
+}
+
+.about {
+    margin:auto;
+}
+
+.tittle{
+    margin: auto;
+    margin:1rem;
+    margin-left:8rem;
+    
+    font-size:1.8rem;
+    color: var(--USAFA-blue);
+}
+
+.about a{
+    text-decoration: none;
+    color: var(--dark-turquoise);
+}
+
+.about p{
+    font-size: 1.2rem;
+    margin: auto;
+    margin-left:8rem;
+}
+
+hr {
+    width:90%;
+    max-width:1280px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+
+    margin: auto;
+}
+
+.container_footer{
+    display:inline-flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+    margin-left:35%;
+
+    font-family:'Fira Sans', sans-serif;
+}
+
+.list{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    
+    padding:1rem;
+    padding-left:0.8rem;
+
+    margin: auto;
+}
+
+.list a {
+    text-decoration: none;
+    color:var(--rich-black);
+
+    margin: auto;
+}
+
+.icons {
+    height:2rem;
+    width: 2rem;
+    
+    margin: auto;
+    margin-bottom:0.5rem;
+    margin-right:0.4rem;
+    
+    cursor: pointer;
+    position: relative;
+    
+    transition:all 1s ease;
+}
+
+.icons:hover{
+    transition:all 1s ease;
+    opacity:0.7;
+}
+
+.titulo_email {
+    font-size:1.3rem;
+}
+
+.btn {
+    padding: 0.8rem 8rem;
+    
+    border-radius: 8px;
+    border: 2px solid var(--USAFA-blue);
+    
+    margin:1rem;
+    
+    background: transparent;
+    color:var(--rich-black-fogra);
+    
+    font-size:1rem;
+    
+    cursor: pointer;
+    
+    transition:all 1s ease;
+}
+
+.btn:hover{
+    background:var(--USAFA-blue);
+    color:var(--rich-white);
+    
+    transition:all 1s ease;
+}
+
+
+@media(max-width:1020px){
+    .container_perfil {
+        display: flex;
+        
+        width:10rem;
+        max-width:17%;
+        height:10rem;
+        max-height:17%;
+    
+        margin:3rem;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #perfil {
+        height:20rem;
+        border-radius: 50%;
+        display: block;
+        margin:15rem 5rem 1rem 15rem;
+    } 
+}
+
+@media(max-width:900px){
+    .txt {
+        font-size:1rem;
+    }
+}

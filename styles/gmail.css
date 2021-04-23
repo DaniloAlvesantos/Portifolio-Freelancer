@@ -1,0 +1,132 @@
+:root {
+    --red:#D00000;
+    --dark-turquoise:#1CCAD8;
+    --rich-black:#111111;
+    --USAFA-blue:#0353A4;
+    --rich-white:#EEE5E5;
+    --white:#ffffff;
+    --rich-black-fogra:#000411;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    font-family:'Fira Sans', sans-serif;
+}
+
+.container_gmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+header {
+    background:linear-gradient(180deg,var(--rich-black-fogra),var(--dark-turquoise)) fixed;
+    color: var(--rich-white);
+    width:100%;
+    height:8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin: 1rem;
+}
+
+.tittle {
+    margin:2rem;
+    font-size:3rem;
+    color:var(--rich-black-fogra);
+}
+
+form input {
+    text-align: top;
+}
+
+.inp {
+    outline-style: none;
+   
+    margin:1rem;
+   
+    width:20rem;
+    height:2rem;
+   
+    border: transparent;
+    border-bottom:1px solid var(--rich-black-fogra);
+   
+    text-transform:initial;
+}
+
+.container_btn {
+    display: table-row;
+}
+
+.btn {
+    background:var(--USAFA-blue);
+    color:var(--rich-white);
+   
+    border: transparent;
+    border-radius:5px;
+   
+    box-shadow:1px 2px 10px 2px rgb(0 0 0 / 43%);
+   
+    cursor: pointer;
+}
+
+.btn1 {
+    width:24rem;
+    height:1.9rem;
+    
+    text-align: center; 
+}
+
+.btn2 {
+    width:10rem;
+    height:2rem;
+    
+    margin:2rem;
+}
+
+.plane {
+    height:1rem;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    margin: 1rem;
+    
+    color:var(--USAFA-blue);
+    font-size:1.3rem;
+}
+
+.assunto{
+    outline-style: none;
+    resize: none;
+
+    width:20rem;
+    max-width:25rem;
+    height:10rem;
+    
+    border: 1px solid var(--rich-black-fogra);
+    border-radius:5px;
+    
+    padding:0.4rem;
+}

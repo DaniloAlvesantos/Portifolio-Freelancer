@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalve's</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/loading.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+  <div class="spinner-wrapper">
+    <div class="spinner"></div>
+  </div class="corpo">
+  <header class="Header" id="header" >
+      <div class="container"  >
+          <div class="container_items" >
+              <ul class="container_ul" >
+                  <li class="lista"><a class="lista_link" href="#header">home</a> </li>
+                  <li class="lista"><a class="lista_link" href="#titulo">quem eu sou</a></li>
+                  <li class="lista"><a class="lista_link" href="#slider">portifolio</a></li>
+                  <li class="lista"><a class="lista_link" href="">entre em contato</a></li>
+              </ul>
+          </div>
+      </div>
+  </header>
+  <div class="contianer_main">
+      <section>
+        <h2 id="titulo">Olá,</h2>
+        <p class="txt">
+          Sou Danilo,desenvolvedor web, eu sou <strong>Front-end</strong> em
+          geral.Tenho 8 meses de expêriencia, sou junior, mas procuro
+          desafios que complementão meu conhecimento profissional. Eu gosto muito de programação, pois não há realização maior do que ver seu aplicativo ou
+          site funcionando
+        </p>
+      </section>
+      <div class="container_perfil">
+        <img id="perfil" src='./docs/perfil.png' alt="profille" />
+      </div>
+      <p class="txt_sec">
+        Eu possuo certificados dos cursos concluidos.
+        <br />
+        Em busca de ser <strong>Freelancer</strong>, portanto <strong>Programei</strong> esse portifolio
+        para demostração do meu potencial
+      </p>
+    </div>
+    <div class="container_skills">
+      <ul class="skills">
+        <li class="skills_js skills_items">
+          <img src="./docs/js.png" title="JavaScript" alt="javaScript" />
+        </li>
+        <li class="skills_react skills_items">
+          <img src="./docs/react.png" title="React.js" alt="react.js" />
+        </li>
+        <li class="skills_next skills_items">
+          <img src='./docs/next.png' title="Next.js" alt="next.js" />
+        </li>
+        <li class="skills_native skills_items">
+          <img src='./docs/react-native.png' title="React-Native" alt="react-native" />
+        </li>
+        <li class="skills_html skills_items">
+          <img src='./docs/html.png' title="HTML" alt="html" />
+        </li>
+        <li class="skills_css skills_items">
+          <img src='./docs/css.png' title="CSS" alt="css" />
+        </li>
+        <li class="skills_photoshop skills_items">
+          <img src='./docs/photoshop.png' title="Photoshop" alt="photoshop" />
+        </li>
+      </ul>
+    </div>
+    <div id='slider' >
+      <img class="selected" src="./docs/1.png" alt="aprensentacao1">    
+      <img src="./docs/2.png" alt="aprensentacao2">
+      <img src="./docs/3.png" alt="aprensentacao3">
+      <img src="./docs/4.png" alt="aprensentacao4">
+      <img src="./docs/5.png" alt="aprensentacao5">
+      <img src="./docs/6.png" alt="aprensentacao6">
+      <img src="./docs/7.png" alt="aprensentacao7">
+  </div>
+  <div class="about-father">
+    <div class="about">
+      <h2 class="tittle">Conheça mais sobre mim</h2>
+      <p>Eu sempre gostei de tecnologia, desde quando eu era pequeno</p>
+      <p>Com meus 10 anos eu pensave em ser engenheiro de software</p>
+      <p>Em 2020 tive a oportunindade de iniciar a minha carrera na área, foi então que começei a estudar programação.</p>
+      <p>Estou cursando ingles profissional há 6 anos, com boa comunicação e interpretação.</p>
+      <p>Com conclusão prevista para 2025.</p>
+      <p>Vou deixar o link para conhecer a instituição.</p>
+      <p><a target="_blank" href="https://www.instagram.com/jetescola/?hl=pt-br">Link do curso</a></p>
+    </div>
+  </div>
+  <div class="about-father">
+    <h2 class="titulo_email">Se você se enteressou. Mande um email</h2>
+    <a href="./gmail.html"><button class="btn">EMAIL</button></a>
+  </div>
+  <hr>
+  <footer>
+    <ul class="container_footer">
+      <li class="list"><img class="icons" src="../app/docs/github.svg" alt="github"><a target="_blank" href="https://github.com/DaniloAlvesantos?tab=repositories">GitHub</a></li>
+      <li class="list"><img class="icons" src="../app/docs/linkedin.svg" alt=""><a target="_blank" href="https://www.linkedin.com/in/dalve-s/">Linkedin</a></li>
+      <li class="list"><img class="icons" src="../app/docs/instagram.svg" alt="instagram"><a target="_blank" href="https://www.instagram.com/danilodos9818/?hl=pt-br">Instagram</a></li>
+    </ul>
+  </footer>
+      <script src="../scripts/main.js"></script>
+      <script>
+        let loader = document.querySelector(".spinner-wrapper");
+        let body = document.querySelector(".corpo");
+        window.addEventListener("load", function () {
+          let time = 1500
+          setInterval(() => {
+            loader.parentElement.removeChild(loader)
+          },time)
+        });
+      </script>
+</body>
+</html>

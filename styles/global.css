@@ -1,0 +1,67 @@
+@media(max-width:1000px){
+    html{
+        font-size:12px;
+    }
+}
+
+@media(max-width:1080px){
+    html{
+        font-size:14px;
+    }
+}
+
+@media(max-width:1030px){
+    html{
+        font-size:13px;
+    }
+}
+
+@media(max-width:970px){
+    html{
+        font-size:12px;
+    }
+}
+
+@media(max-width:850px){
+    html {
+        font-size:11px;
+    }
+}
+
+@media(max-width:720px){
+    html{
+        font-size:10px;
+    }
+}
+
+@media(max-width:680px){
+    html{
+        font-size:10px;
+    }
+    .container_perfil {
+        display: flex;
+        
+        width:8rem;
+        max-width:17%;
+        height:8rem;
+        max-height:17%;
+        
+        margin:2rem;
+        
+        align-items: center;
+        justify-content: center;
+    }
+        
+    #perfil {
+        height:18rem;
+        border-radius:50%;
+        display: block;
+        margin:15rem 9rem 1rem 15rem;
+    } 
+}
+
+@media(max-width:580px){
+    html {
+        font-size:8.5px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/gmail.css">
+    <title>Gmail</title>
+</head>
+<body>
+        <header>
+            <h2>Entre em contato</h2>
+            <p>Envie propostas, duvidas, etc</p>
+        </header>
+        <form class="container_gmail" method="POST" action="https://api.staticforms.xyz/submit" target="_blank">
+            <input type="hidden" name="accessKey" value="7564d773-6009-41d6-98b2-18f01cb61ea6" id="">
+            <label id="label" for="name">Nome</label>
+            <input class="inp" onblur="autenticacao()" type="text" id="nome" name="name" placeholder="NOME">
+            <input class="inp" type="text" name="phone" placeholder="Numero">
+            <input class="inp" type="email" name="email" required placeholder="EMAIL">
+            <input type="text" name="honeypot" style="display: none;">
+            <label for="message">Assunto</label>
+            <textarea class="assunto" name="message" placeholder="Escreva" cols="30" rows="10"></textarea>
+            <input type="hidden" name="redirectTo" value="./gmail.html"><!--Esse campo e para direcionar ele para uma pagina com dominio-->
+            <div class="container_btn">
+                <button type="submit" onclick="alert('Estaremos entrando em contato')" class="btn btn1">Enviar Email <img class="plane" src="../app/docs/paper-plane (1).svg" alt="enviar"></button>
+               <button type="button" class="btn btn2">Voltar</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function back() {
+            window.history.back();
+        }
+        function autenticacao(){
+            let inp = document.querySelector('#nome');
+            let label = document.querySelector('#label');
+            let value = inp.value;
+            let max = value.length;
+            if(max <= 8){
+                window.alert("Campo Nome está com pucas letras !")
+            }
+        }
+    </script>
+</body>
+</html>
