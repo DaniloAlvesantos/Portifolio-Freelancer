@@ -1,3 +1,15 @@
+@media(max-width:1200px){
+    html{
+        font-size:15px;
+    }
+}
+
+@media(max-width:1090px){
+    html {
+        font-size:14px;
+    }
+}
+
 @media(max-width:1000px){
     html{
         font-size:12px;
@@ -60,8 +72,53 @@
     } 
 }
 
+@media(max-width:600px){
+    html{
+        font-size:9px;
+    }
+}
+
 @media(max-width:580px){
     html {
         font-size:8.5px;
     }
+}
+
+@media(max-width:500px){
+    html {
+        font-size:7px;
+    }
+}
+
+@media(max-width:300px){
+    html {
+        font-size:4px;
+    }
+    .container_skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        margin: auto;
+        margin-bottom:4rem;
+    }
+    
+    
+    .skills {
+        display: inline-flex;
+        margin-top:-2rem;
+    }
+    
+    .skills li {
+        display: inline-flex;
+    }
+    
+    .skills_items {
+        margin:0.7rem;
+       
+        width:5.25rem;
+        height:5.25rem; 
+    }
+    
 }
