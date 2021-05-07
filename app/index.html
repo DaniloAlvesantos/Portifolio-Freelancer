@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/loading.css">
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src="../scripts/chooseTheme.js"></script>
 </head>
 <body>
   <div class="spinner-wrapper">
@@ -20,7 +22,8 @@
       <div class="container"  >
           <div class="container_items" >
               <ul class="container_ul" >
-                  <li class="lista"><a class="lista_link" href="#header">home</a> </li>
+                  <div onclick="choose()" title="Tema" class="icon"></div>
+                  <li class="lista"><a class="lista_link" href="#header">home</a></li>
                   <li class="lista"><a class="lista_link" href="#titulo">quem eu sou</a></li>
                   <li class="lista"><a class="lista_link" href="#slider">portifolio</a></li>
                   <li class="lista"><a class="lista_link" href="">entre em contato</a></li>
@@ -101,9 +104,9 @@
   <hr>
   <footer>
     <ul class="container_footer">
-      <li class="list"><img class="icons" src="../app/docs/github.svg" alt="github"><a target="_blank" href="https://github.com/DaniloAlvesantos?tab=repositories">GitHub</a></li>
-      <li class="list"><img class="icons" src="../app/docs/linkedin.svg" alt=""><a target="_blank" href="https://www.linkedin.com/in/dalve-s/">Linkedin</a></li>
-      <li class="list"><img class="icons" src="../app/docs/instagram.svg" alt="instagram"><a target="_blank" href="https://www.instagram.com/danilodos9818/?hl=pt-br">Instagram</a></li>
+      <li class="list"><img class="icons" src="../app/docs/github.svg" alt="github"><a class="l0" target="_blank" href="https://github.com/DaniloAlvesantos?tab=repositories">GitHub</a></li>
+      <li class="list"><img class="icons" src="../app/docs/linkedin.svg" alt=""><a class="l1" target="_blank" href="https://www.linkedin.com/in/dalve-s/">Linkedin</a></li>
+      <li class="list"><img class="icons" src="../app/docs/instagram.svg" alt="instagram"><a class="l2" target="_blank" href="https://www.instagram.com/danilodos9818/?hl=pt-br">Instagram</a></li>
     </ul>
   </footer>
       <script src="../scripts/main.js"></script>

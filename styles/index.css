@@ -20,6 +20,15 @@ body::-webkit-scrollbar{
 body{
     height:100vh;
     width:100vw;
+    transition: all 1s ease;
+}
+
+body.dark {
+    height:100vh;
+    width:100vw;
+    background:var(--rich-black);  
+    color:white;
+    transition: 1s ease;
 }
 
 
@@ -44,9 +53,52 @@ body{
     text-transform: uppercase;
 }
 
+.container.dark {
+    background:linear-gradient(180deg,#dddd,var(--rich-black)) fixed;
+}
+
 .container_items {
     margin-top:1rem;
 }
+
+.icon {
+    position: absolute;
+    top:2rem;
+    left:2rem;
+    background:var(--rich-black-fogra);
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon:before{
+    content: '\f186';
+    font-family: fontAwesome;
+    color:white;
+}
+
+.icon.dark.icon:before{
+    content: '\f185';
+    color: var(--rich-black);
+    position: absolute;
+    background:var(--rich-white);
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_item {
+    width:1rem;
+    height:1rem;
+}
+
 
 .container_ul{
     display:inline-flex;
@@ -90,6 +142,26 @@ body{
    
     color:var(--rich-white);
     font-family:'Fira Sans', sans-serif;
+    transition: 1s all ease;
+}
+
+.contianer_main.dark{
+    background:#080705;
+    
+    width:100%;
+    height:25rem;
+   
+    display: flex;
+   
+    color:var(--rich-white);
+    font-family:'Fira Sans', sans-serif;
+    transition: 1s all ease;
+}
+
+.contianer_main img {
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
 }
 
 #titulo{
@@ -205,6 +277,10 @@ section {
     position: relative;
 }
 
+#slider.dark {
+    box-shadow:1px 2px 28px 2px rgb(999,999,999)
+}
+
 #slider img {
     opacity:0;
     position: absolute;
@@ -317,7 +393,6 @@ footer {
 
 .icons:hover{
     transition:all 1s ease;
-    opacity:0.7;
 }
 
 .titulo_email {
@@ -342,6 +417,24 @@ footer {
     transition:all 1s ease;
 }
 
+.btn.dark {
+    padding: 0.8rem 8rem;
+    
+    border-radius: 8px;
+    border: 2px solid var(--USAFA-blue);
+    
+    margin:1rem;
+    
+    background: transparent;
+    color:var(--rich-white);
+    
+    font-size:1rem;
+    
+    cursor: pointer;
+    
+    transition:all 1s ease;
+}
+
 .btn:hover{
     background:var(--USAFA-blue);
     color:var(--rich-white);
@@ -349,6 +442,29 @@ footer {
     transition:all 1s ease;
 }
 
+.l0{ 
+    color:black;
+}
+
+.l0.dark {
+    color: white;
+}
+
+.l1{ 
+    color:black;
+}
+
+.l1.dark {
+    color: white;
+}
+
+.l2{ 
+    color:black;
+}
+
+.l2.dark {
+    color: white;
+}
 
 @media(max-width:1020px){
     .container_perfil {
