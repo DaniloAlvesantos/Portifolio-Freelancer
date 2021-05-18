@@ -255,6 +255,12 @@ section {
     max-width:100px;
     height: 6.25rem;
     max-height:100px; 
+    transform:scale(0.8);
+    transition: all ease 0.3s;
+}
+
+.skills_items:hover{
+    transform:scale(0.9) ;
 }
 
 #slider {
