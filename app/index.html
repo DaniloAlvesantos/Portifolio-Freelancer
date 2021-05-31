@@ -26,9 +26,19 @@
                   <li class="lista"><a class="lista_link" href="#header">home</a></li>
                   <li class="lista"><a class="lista_link" href="#titulo">quem eu sou</a></li>
                   <li class="lista"><a class="lista_link" href="#slider">portifolio</a></li>
-                  <li class="lista"><a class="lista_link" href="">entre em contato</a></li>
+                  <li class="lista"><a class="lista_link" href="./gmail.html">entre em contato</a></li>
               </ul>
           </div>
+      </div>
+      <div class="menu-mobile">
+        <img class="img" src="../app/docs/menu.svg" alt="menu-icon">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#titulo">quem eu sou</a></li>
+            <li><a href="#slider">portifolio</a></li>
+            <li><a href="./gmail.html">Entre em contato</a></li>
+            <li><div onclick="choose()" title="Tema" class="icon"></div></li>
+          </ul>
       </div>
   </header>
   <div class="contianer_main">
@@ -74,6 +84,9 @@
         <li class="skills_photoshop skills_items">
           <img src='./docs/photoshop.png' title="Photoshop" alt="photoshop" />
         </li>
+        <li class="skills_items skills_wordPress">
+          <img src="./docs/wordpress.svg" alt="WordPress" title="WordPress">
+        </li>
       </ul>
     </div>
     <div id='slider' >
@@ -110,6 +123,7 @@
     </ul>
   </footer>
       <script src="../scripts/main.js"></script>
+      <script src="../scripts/show-menu.js"></script>
       <script>
         let loader = document.querySelector(".spinner-wrapper");
         let body = document.querySelector(".corpo");
