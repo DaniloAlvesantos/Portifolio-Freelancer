@@ -1,0 +1,127 @@
+:root {
+    --red:#D00000;
+    --dark-turquoise:#1CCAD8;
+    --rich-black:#111111;
+    --USAFA-blue:#0353A4;
+    --rich-white:#EEE5E5;
+    --white:#ffffff;
+    --rich-black-fogra:#000411;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:'Fira Sans', sans-serif;
+    background:linear-gradient(290deg,rgb(212, 206, 206),var(--white)) fixed;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+header {
+    background:linear-gradient(300deg, var(--USAFA-blue), var(--dark-turquoise)) fixed;
+    height:5rem;
+    width:100%;
+}
+
+ul {
+    height:5rem;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    display:inline-flex;
+}
+
+.logo {
+    height:10rem;
+}
+
+.button_header {
+    cursor: pointer;
+    border:none;
+    background:var(--dark-turquoise);
+    color: var(--rich-white);
+    border-radius:5px;
+    padding:0.6rem;
+    font-size:0.9rem;
+    text-decoration: none;
+    font-family:'Fira Sans', sans-serif;
+    margin: auto;
+    margin-left:-10rem;
+}
+
+.container {
+    font-family:'Fira Sans', sans-serif;
+    width:40.3rem;
+    height:18.1rem;
+    border-radius:10px;
+
+    margin:1rem;
+
+    display: flex;
+}
+    
+
+.container_img {
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    object-fit: cover;
+    margin:0.7rem;
+}
+
+.container_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_items {
+    font-family:'Fira Sans', sans-serif;
+    align-items: center;
+    margin:2rem;
+    background: var(--white);
+    color: var(--rich-black);
+    padding:2rem;
+    width:25rem;
+    box-shadow:1px 2px 28px 2px rgb(0 0 0 / 41%);
+    border-radius:5px;
+    margin-bottom:5rem;
+}
+
+.container_items strong {
+    color: var(--USAFA-blue);
+    text-transform:uppercase;
+}
+
+.container_items p {
+    margin:4px;
+}
+
+.button_next {
+    cursor: pointer;
+    border:1px solid #111;
+    background:none;
+    color: var(--rich-black);
+    border-radius:5px;
+    padding:0.6rem;
+    font-size:0.9rem;
+    text-decoration: none;
+    font-family:'Fira Sans', sans-serif;
+    transition:1s;
+    margin:0.6rem;
+    margin-left:10rem;
+}
+
+.button_next:hover{
+    background:var(--USAFA-blue);
+    color:var(--rich-white);
+}
+
+.chacter0 {
+    position: absolute;
+    top:7.5rem;
+    left:35.6rem;
+    height:18rem;
+}
