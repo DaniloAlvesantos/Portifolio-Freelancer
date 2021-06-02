@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
 header {
     background:linear-gradient(300deg, var(--USAFA-blue), var(--dark-turquoise)) fixed;
     height:5rem;
-    width:100%;
+    width:100vw;
 }
 
 ul {
@@ -84,7 +84,7 @@ ul {
     background: var(--white);
     color: var(--rich-black);
     padding:2rem;
-    width:25rem;
+    width:clamp(30rem,25rem,20rem);
     box-shadow:1px 2px 28px 2px rgb(0 0 0 / 41%);
     border-radius:5px;
     margin-bottom:5rem;

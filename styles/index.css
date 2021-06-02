@@ -12,17 +12,17 @@ html {
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-    scroll-behavior: smooth;
-    height:100vh;
-}
-
 body{
     height:100vh;
     width:100vw;
     transition: all 1s ease;
 }
+
+body::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
 
 body.dark {
     height:100vh;
@@ -81,7 +81,7 @@ body.dark {
     transition: 1s;
     width:100%;
     position: absolute;
-    top:40px;
+    top:45px;
     left:0;
     text-align: center;
     text-transform: uppercase;
@@ -182,7 +182,7 @@ body.dark {
    
     width:100%;
     height:25rem;
-   
+    
     display: flex;
    
     color:var(--rich-white);
@@ -219,9 +219,8 @@ body.dark {
 }
 
 .txt {
-   
-    font-size:1.2rem;
-   
+    font-size:1rem;
+
     margin:1rem;
     padding-right:3rem;
 }
@@ -233,11 +232,11 @@ body.dark {
 
 
 .txt_sec {
-    font-size:1.2rem;
+    font-size:1.1rem;
    
     margin:2rem;
-    margin-top:9rem;
-    margin-left:8rem;
+    margin-top:8rem;
+    margin-left:rem;
 }
 
 .txt_sec strong {
@@ -255,9 +254,7 @@ section {
     display: flex;
     
     width:18rem;
-    max-width:20%;
     height:18rem;
-    max-height:20%;
 
     margin:2rem;
     
@@ -269,8 +266,10 @@ section {
     border-radius: 50%;
    
     display: block;
+    width:clamp(20rem,17rem,12rem);
+    height:clamp(20rem,17rem,12rem);
    
-    margin:16.2rem 5rem 1rem 10rem;
+    margin:4.2rem 7rem 1rem 7rem;
 }
 
 .container_skills {
@@ -521,35 +520,6 @@ footer {
 
 .l2.dark {
     color: white;
-}
-
-@media(max-width:1020px){
-    .container_perfil {
-        display: flex;
-        
-        width:10rem;
-        max-width:17%;
-        height:10rem;
-        max-height:17%;
-    
-        margin:3rem;
-        
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #perfil {
-        height:20rem;
-        border-radius: 50%;
-        display: block;
-        margin:15rem 5rem 1rem 15rem;
-    } 
-}
-
-@media(max-width:900px){
-    .txt {
-        font-size:1rem;
-    }
 }
 
 @media(max-width:760px){
