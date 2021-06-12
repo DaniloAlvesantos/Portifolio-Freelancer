@@ -28,7 +28,7 @@
             <textarea class="assunto" name="message" placeholder="Escreva" cols="30" rows="10"></textarea>
             <input type="hidden" name="redirectTo" value="https://mail.google.com"><!--Esse campo é para direcionar o usuario para uma pagina quando ele der submit em uma pagina com dominio -->
             <div class="container_btn">
-                <button type="submit" onclick="alert('Estaremos entrando em contato')" class="btn btn1">Enviar Email <img class="plane" src="./docs/paper-plane (1).svg" alt="enviar"></button>
+                <button type="submit" onclick="send()" class="btn btn1">Enviar Email <img class="plane" src="./docs/paper-plane (1).svg" alt="enviar"></button>
                <button onclick="back()" type="button" class="btn btn2">Voltar</button>
             </div>
         </form>
@@ -43,8 +43,13 @@
             let value = inp.value;
             let max = value.length;
             if(max <= 8){
-                window.alert("Campo Nome está com pucas letras !")
+                window.alert("Campo Nome está com pucas letras !");
             }
+        }
+        function send() {
+            let input = document.querySelector('#nome');
+            let inputValue = inp.value;
+            window.alert("Olá, " + inputValue + " entraremos em contato !");
         }
     </script>
 </body>
