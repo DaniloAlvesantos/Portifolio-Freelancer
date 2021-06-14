@@ -181,7 +181,7 @@ body.dark {
     background:var(--rich-black);
    
     width:100vw;
-    height:20rem;
+    height:50%;
     
     display: flex;
     align-items: center;
@@ -234,7 +234,7 @@ body.dark {
 .txt_sec {
     font-size:15px;
    
-    margin:6rem 3rem 0 5rem;
+    margin:7rem 3rem 0 5rem;
 
     width:30%;
 }
@@ -257,8 +257,6 @@ section {
     height:18rem;  
 
     object-fit:cover;
-    
-    /* margin-left:-12rem; */
     display: block;
 }
 
@@ -364,8 +362,7 @@ section {
 }
 
 hr {
-    width:90%;
-    max-width:1280px;
+    width:100vw;
 }
 
 footer {
@@ -415,16 +412,10 @@ footer {
     
     cursor: pointer;
     position: relative;
-    
-    transition:all 1s ease;
-}
-
-.icons:hover{
-    transition:all 1s ease;
 }
 
 .titulo_email {
-    font-size:1.3rem;
+    font-size:110%;
 }
 
 .btn {
@@ -635,7 +626,212 @@ footer {
 }
 
 @media(max-width:610px) {
-    .txt_sec {
-        width:58%;
+    #perfil {
+        width:11rem;
+        height:11rem;
     }
+    .txt {
+        font-size: 11px;
+    }
+    .txt_sec {
+        width:57%;
+        font-size:11px;
+    }
+}
+
+@media(max-width:570px) {
+    #titulo{
+        font-size: 60px;
+    }
+    .txt {
+        font-size:11px;
+        width:75%;
+        margin-bottom:-0.4rem;
+    }
+    .txt_sec {
+        width:60%;
+        font-size:11px;
+    }
+    .btn {
+        padding: 0.7rem 6rem;
+    }
+}
+
+@media (max-width:560px) {
+    .skills_items img {
+        width:4.4rem;
+        height:4.4rem;
+    }   
+    
+}
+
+@media (max-width:550px) {
+    #perfil {
+        width:10rem;
+        height:10rem;
+    }
+    .txt {
+        font-size:11px;
+        width:75%;
+        margin-bottom:-0.4rem;
+    }
+    .txt_sec {
+        width:60%;
+        font-size:11px;
+    }
+    #slider {
+        width:28rem;
+        height:15rem;
+    }
+    
+    .tittle{
+        margin: auto;
+        margin:1rem;
+        
+        font-size:1.5rem;
+        color: var(--USAFA-blue);
+    }
+    
+    .about p{
+        font-size: 1rem;
+        margin: auto;
+    }
+}
+
+@media (max-width:520px) {
+    .skills_items img {
+        width:4rem;
+        height:4rem;
+    }    
+    #slider {
+        width:25rem;
+        height:13rem;
+    }
+}
+
+
+@media(max-width:510px) {
+    .txt {
+        font-size:10px;
+        width:78%;
+        margin-bottom:-0.4rem;
+    }
+    .txt_sec {
+        width:70%;
+        font-size:10px;
+        margin-right:0.8rem;
+    }
+}
+
+@media (max-width:480px) {
+    .tittle{
+        margin: auto;
+        margin:1rem;
+        
+        font-size:1.4rem;
+        color: var(--USAFA-blue);
+    }
+    
+    .about p{
+        font-size:0.9rem;
+        margin: auto;
+    }
+}
+
+@media (max-width:470px) {
+    .txt {
+        font-size:10px;
+        width:80%;
+        margin-bottom:-0.4rem;
+    }
+    .txt_sec {
+        width:75%;
+        font-size:10px;
+    }
+}
+
+@media (max-width:460px){
+    .skills_items img {
+        width:3.6rem;
+        height:3.6rem;
+    }  
+}
+
+@media (max-width:440px) {
+    #perfil{
+        display: none;
+    }
+    #titulo {
+        font-size: 50px;
+    }
+    .txt {
+        font-size:9px;
+        width:80%;
+    }
+    .txt_sec {
+        width:100%;
+        font-size:9px;
+    }
+    #slider {
+        width:23rem;
+        height:12rem;
+    }
+    .btn{
+        padding: 0.6rem 5rem;
+    }
+    .tittle{
+        margin: auto;
+        margin:1rem;
+        
+        font-size:1.3rem;
+        color: var(--USAFA-blue);
+    }
+    
+    .about p{
+        font-size:0.8rem;
+        margin: auto;
+    }
+}
+
+@media(max-width:410px) {
+    .skills_items img {
+        width:3rem;
+        height:3rem;
+    }  
+    #slider {
+        width:21rem;
+        height:10rem;
+    } 
+}
+
+@media(max-width:380px){
+    .list a {
+        display: none;
+    }
+}
+
+@media (max-width:380px) {
+    .tittle{
+        margin: auto;
+        margin:1rem;
+        
+        font-size:1.22rem;
+        color: var(--USAFA-blue);
+    }
+    
+    .about p{
+        font-size:0.7rem;
+        margin: auto;
+    }
+}
+
+@media (max-width:350px) {
+    #slider {
+        width:18rem;
+        height:8rem;
+    }
+    .skills_items img {
+        width:2.6rem;
+        height:2.6rem;
+    }  
 }
