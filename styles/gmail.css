@@ -63,8 +63,8 @@ form input {
    
     margin:1rem;
    
-    width:20rem;
-    height:2rem;
+    width:15rem;
+    height:2%;
    
     border: transparent;
     border-bottom:1px solid var(--rich-black-fogra);
@@ -74,6 +74,8 @@ form input {
 
 .container_btn {
     display: table-row;
+    width:100%;
+    height:30%;
 }
 
 .btn {
@@ -90,15 +92,15 @@ form input {
 }
 
 .btn1 {
-    width:24rem;
-    height:2.1rem;
+    width:45%;
+    height:2rem;
     
     text-align: center; 
 }
 
 .btn2 {
-    width:10rem;
-    height:2.1rem;
+    width:30%;
+    height:2rem;
     
     margin:2rem;
 }
@@ -122,12 +124,75 @@ label{
     outline-style: none;
     resize: none;
 
-    width:20rem;
-    max-width:25rem;
-    height:10rem;
+    width:15rem;
+    height:10%;
     
     border: 1px solid var(--rich-black-fogra);
     border-radius:5px;
     
     padding:0.4rem;
+}
+
+@media (max-width:630px) {
+    .btn1 {
+        width:20rem;
+        height:2rem;
+
+        margin-top:1rem;
+        margin-bottom:-1rem;
+        
+        text-align: center; 
+    }
+    
+    .btn2 {
+        width:10rem;
+        height:2rem;
+        
+        margin:2rem;
+    }
+    
+    .container_btn {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height:30%;
+    }
+}
+
+@media (max-width:380px) {
+    .btn1 {
+        width:18rem;
+        height:2rem;
+
+        margin-top:1rem;
+        margin-bottom:-1rem;
+        
+        text-align: center; 
+    }
+    
+    .btn2 {
+        width:8rem;
+        height:2rem;
+        
+        margin:2rem;
+    }
+}
+
+@media (max-width:320px) {
+    .btn1 {
+        width:80%;
+        height:2rem;
+
+        margin-top:1rem;
+        margin-bottom:-1rem;
+        
+        text-align: center; 
+    }
+    
+    .btn2 {
+        width:50%;
+        height:2rem;
+        
+        margin:2rem;
+    }
 }
