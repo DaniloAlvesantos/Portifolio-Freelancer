@@ -23,10 +23,11 @@ body::-webkit-scrollbar{
     scroll-behavior: smooth;
 }
 
+::selection {
+    background:var(var(--USAFA-blue));
+}
 
 body.dark {
-    height:100vh;
-    width:100vw;
     background:var(--rich-black);  
     color:white;
     transition: 1s ease;
@@ -195,9 +196,6 @@ body.dark {
 
 .contianer_main.dark{
     background:#080705;
-    
-    width:100%;
-    height:25rem;
    
     display: flex;
    
