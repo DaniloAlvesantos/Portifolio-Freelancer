@@ -272,6 +272,10 @@ section {
     transition: ease 0.3s;
 }
 
+.skills_items img {
+    border-radius:10px;
+}
+
 .skills_items:hover{
     transform:scale(0.9) ;
 }
