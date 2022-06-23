@@ -387,6 +387,8 @@ footer {
     flex-direction: center;
 
     margin: auto;
+
+    background: #0353A4;
 }
 
 .container_footer{
@@ -400,21 +402,33 @@ footer {
 }
 
 .list{
-    display: inline-flex;
+    display:flex;
     list-style: none;
     align-items: center;
-    
-    padding:1rem;
-    padding-left:0.8rem;
+    justify-content: center;
 
-    margin: auto;
+    padding: 1rem;
+
+    border:solid 1px #111111;
+    border-radius:5px;
+
+    margin:1rem;
+
+    transition: 400ms ease;
+
+    color:var(--rich-white);
+}
+
+.list:hover {
+    background: #EEE5E5;
+    color: #111111;
+}
+.list a:hover {
+    color: #111111;
 }
 
 .list a {
     text-decoration: none;
-    color:var(--rich-black);
-
-    margin: auto;
 }
 
 .icons {
@@ -525,8 +539,8 @@ footer {
 
 @media(max-width:865px) {
     #perfil {
-        width:14rem;
-        height:14rem;
+        width:20rem;
+        height:15rem;
     }
     .txt {
         font-size:12px;
@@ -561,8 +575,8 @@ footer {
 
 @media(max-width:780px) {
     #perfil{
-        width:14rem;
-        height:14rem;
+        width:20rem;
+        height:12rem;
     }
     .txt { 
         font-size:13px;
@@ -576,8 +590,8 @@ footer {
 
 @media(max-width:730px) {
     #perfil {
-        width:13rem;
-        height:13rem;
+        width:20rem;
+        height:12rem;
         margin-bottom:-3rem;
     }
     .txt { 
@@ -593,6 +607,7 @@ footer {
 @media(max-width:700px) {
     #perfil {
         margin-right:-2rem;
+        height:11rem;
     }
     .skills_items img {
         width:5rem;
@@ -642,8 +657,8 @@ footer {
 
 @media(max-width:610px) {
     #perfil {
-        width:11rem;
-        height:11rem;
+        width:20rem;
+        height:10rem;
     }
     .txt {
         font-size: 11px;
@@ -682,8 +697,8 @@ footer {
 
 @media (max-width:550px) {
     #perfil {
-        width:10rem;
-        height:10rem;
+        width:20rem;
+        height:9rem;
     }
     .txt {
         font-size:11px;
@@ -736,6 +751,21 @@ footer {
         font-size:10px;
         margin-right:0.8rem;
     }
+    #perfil {
+        width:18rem;
+        height:8rem;
+    }
+}
+
+@media(max-width:490px){
+    .list a {
+        display: none;
+    }
+    .icons {
+        width:2.8rem;
+        height:2.8rem;
+        margin:0;
+    }
 }
 
 @media (max-width:480px) {
@@ -770,6 +800,10 @@ footer {
         width:3.6rem;
         height:3.6rem;
     }  
+    #perfil {
+        width: 20rem;
+        height:7rem;
+    }
 }
 
 @media (max-width:440px) {
@@ -824,12 +858,6 @@ footer {
         width:21rem;
         height:10rem;
     } 
-}
-
-@media(max-width:380px){
-    .list a {
-        display: none;
-    }
 }
 
 @media (max-width:380px) {
