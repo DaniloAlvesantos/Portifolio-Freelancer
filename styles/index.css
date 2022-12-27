@@ -388,7 +388,7 @@ footer {
 
     margin: auto;
 
-    background: #0353A4;
+    background:transparent;
 }
 
 .container_footer{
@@ -420,11 +420,7 @@ footer {
 }
 
 .list:hover {
-    background: #EEE5E5;
-    color: #111111;
-}
-.list a:hover {
-    color: #111111;
+    background:var(--USAFA-blue);
 }
 
 .list a {
